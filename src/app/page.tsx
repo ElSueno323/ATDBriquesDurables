@@ -3,9 +3,13 @@
 import { useTranslation } from "@/utils/useTranslation";
 import styles from "./page.module.css";
 import Image from "next/image";
+import EstimateModal from "@/components/EstimateModal";
+import { useState } from "react";
 
 export default function Home() {
   const { t } = useTranslation();
+  const [openModal, setOpenModal] = useState(false);
+
   return (
     <div className={styles.home}>
       {/* Section Hero */}
@@ -70,12 +74,13 @@ export default function Home() {
           <div className={styles.bottomColRight}>
             <div className={styles.consultationBox}>
               <span>{t.home.bottom.consultation}</span>
-              <button className={styles.estimateBtn}>{t.home.bottom.estimateBtn}</button>
+              <button className={styles.estimateBtn} onClick={() => setOpenModal(true)}>{t.home.bottom.estimateBtn}</button>
             </div>
           </div>
         </div>
         
       </section>
+      <EstimateModal open={openModal} onClose={() => setOpenModal(false)} />
     </div>
   );
 }
