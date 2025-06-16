@@ -202,7 +202,7 @@ a.secondary {
   margin-bottom: 2rem;
 }
 .cta {
-  background: #d84315;
+  background: var(--theme-red-off) ;
   color: #fff;
   border: none;
   padding: 0.9rem 2.2rem;
@@ -211,10 +211,10 @@ a.secondary {
   cursor: pointer;
   font-weight: 600;
   letter-spacing: 1px;
-  transition: background 0.2s;
+  transition: background 0.8s;
 }
 .cta:hover {
-  background: #b32c0b;
+  background: var(--theme-red);
 }
 
 /* FEATURES GRID */
@@ -252,17 +252,17 @@ a.secondary {
   display: flex;
   margin: 0 auto;
   max-width: 1100px;
-  background: #fff7ed;
+  background: var(--theme-red);
   border-radius: 10px;
   margin-top: 2.5rem;
   box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  padding: 2.2rem 0 0 1.5rem;
   overflow: hidden;
 }
 .bottomColLeft {
-  background: #b32c0b;
+  background: var(--theme-red);
   color: #fff;
   flex: 1.2;
-  padding: 2.2rem 1.5rem;
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
@@ -279,9 +279,9 @@ a.secondary {
   margin-bottom: 0.7rem;
 }
 .bottomColCenter {
-  flex: 2;
   padding: 2.2rem 2rem;
   display: flex;
+  background: var(--theme-beige);
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
@@ -315,7 +315,7 @@ a.secondary {
   margin-bottom: 1.2rem;
 }
 .estimateBtn {
-  background: #d84315;
+  background: var(--theme-red-off);
   color: #fff;
   border: none;
   padding: 0.8rem 1.5rem;
@@ -324,29 +324,69 @@ a.secondary {
   cursor: pointer;
   font-weight: 600;
   letter-spacing: 1px;
-  transition: background 0.2s;
+  transition: background 0.5s;
 }
 .estimateBtn:hover {
-  background: #b32c0b;
+  background: var(--theme-red);
 }
 
 @media (max-width: 900px) {
+  .hero {
+    height: 300px;
+  }
+  .heroOverlay h1 {
+    font-size: 2.2rem;
+  }
   .featuresGrid {
     grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
   }
   .bottomSection {
     flex-direction: column;
+    gap: 2rem;
   }
   .bottomColLeft, .bottomColCenter, .bottomColRight {
-    padding: 1.5rem 1rem;
+    width: 100%;
+    max-width: 100%;
   }
 }
 @media (max-width: 600px) {
-  .featuresGrid {
-    grid-template-columns: 1fr;
-    gap: 1.2rem;
+  .hero {
+    height: 200px;
+    padding: 0;
   }
   .heroOverlay {
-    padding: 2rem 0.5rem;
+    padding: 1rem;
+  }
+  .heroOverlay h1 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  .heroOverlay p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .cta {
+    padding: 0.7rem 1.2rem;
+    font-size: 1rem;
+  }
+  .featuresGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+  .feature {
+    align-items: flex-start;
+    text-align: left;
+  }
+  .bottomSection {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem 0;
+  }
+  .bottomColLeft, .bottomColCenter, .bottomColRight {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
   }
 }

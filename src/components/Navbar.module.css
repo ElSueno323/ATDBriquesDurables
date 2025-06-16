@@ -26,15 +26,15 @@
   gap: 2rem;
 }
 
-.links a {
+.links a, .langButton {
   text-decoration: none;
   color: #333;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
-.links a:hover {
-  color: #007bff;
+.links a:hover, .langButton:hover {
+  color: var(--theme-red);
 }
 
 .cart {
@@ -42,18 +42,60 @@
   text-decoration: none;
 }
 
+.cart svg {
+  transition: color 0.2s;
+}
+
+.cart:hover svg {
+  color: var(--theme-red) !important;
+}
+
 .langButton {
   padding: 0.5rem 1rem;
-  border: 2px solid #007bff;
+  border: 2px solid var(--theme-red);
   border-radius: 4px;
   background-color: transparent;
-  color: #007bff;
+  color: var(--theme-red);
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .langButton:hover {
-  background-color: #007bff;
+  background-color: var(--theme-red);
   color: white;
+}
+
+@media (max-width: 900px) {
+  .links {
+    gap: 1rem;
+  }
+  .logo {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.7rem 1rem;
+  }
+  .logo {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .links {
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .links a, .langButton {
+    font-size: 0.95rem;
+    padding: 0.4rem 0.7rem;
+  }
+  .cart {
+    font-size: 1.2rem;
+  }
 } 

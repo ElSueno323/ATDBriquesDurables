@@ -6,4 +6,24 @@
   padding: 1.2rem 0;
   font-size: 1rem;
   margin-top: 2rem;
+}
+
+@media (max-width: 900px) {
+  .footerContent {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer {
+    padding: 1rem 0.5rem;
+    font-size: 0.95rem;
+  }
+  .footerContent {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
 } 

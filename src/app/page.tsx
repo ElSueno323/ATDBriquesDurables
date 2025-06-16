@@ -61,16 +61,20 @@ export default function Home() {
           <h4>{t.home.bottom.quality.title}</h4>
           <p>{t.home.bottom.quality.desc}</p>
         </div>
-        <div className={styles.bottomColCenter}>
-          <h2>{t.home.bottom.centerTitle}</h2>
-          <p>{t.home.bottom.centerDesc}</p>
-        </div>
-        <div className={styles.bottomColRight}>
-          <div className={styles.consultationBox}>
-            <span>{t.home.bottom.consultation}</span>
-            <button className={styles.estimateBtn}>{t.home.bottom.estimateBtn}</button>
+        
+        <div>
+          <div className={styles.bottomColCenter}>
+            <h2>{t.home.bottom.centerTitle}</h2>
+            <p>{t.home.bottom.centerDesc}</p>
+          </div>
+          <div className={styles.bottomColRight}>
+            <div className={styles.consultationBox}>
+              <span>{t.home.bottom.consultation}</span>
+              <button className={styles.estimateBtn}>{t.home.bottom.estimateBtn}</button>
+            </div>
           </div>
         </div>
+        
       </section>
     </div>
   );

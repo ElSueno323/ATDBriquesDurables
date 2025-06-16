@@ -1,5 +1,9 @@
 :root {
   --primary-color: #007bff;
+  --theme-red: #ba1e05;
+  --theme-red-off: rgba(165, 42, 42, 0.589);
+  --theme-beige: #fff7ed;
+
   --text-color: #333333;
   --background-color: #ffffff;
   --secondary-background: #f8f9fa;
