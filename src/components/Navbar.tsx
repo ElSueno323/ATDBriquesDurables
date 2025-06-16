@@ -1,20 +1,36 @@
+'use client';
+
 import Link from "next/link";
-import { FaShoppingCart } from "react-icons/fa";
 import styles from "./Navbar.module.css";
+import { useTranslation } from "@/utils/useTranslation";
 
 export default function Navbar() {
+  const { t, language, setLanguage } = useTranslation();
+
+  const toggleLanguage = () => {
+    setLanguage(language === 'fr' ? 'en' : 'fr');
+  };
+
   return (
     <nav className={styles.navbar}>
-      <div className={styles.logo}>ATD Briques Durables</div>
-      <ul className={styles.navLinks}>
-        <li><Link href="/projects">Projects</Link></li>
-        <li><Link href="/services">Services</Link></li>
-        <li><Link href="/contact">Contact</Link></li>
-        <li><Link href="/">Home</Link></li>
-        <li><Link href="/about">About</Link></li>
-      </ul>
-      <div className={styles.cart}>
-        <FaShoppingCart size={22} />
+      <div className={styles.logo}>
+        <Link href="/">ATD Briques Durables</Link>
+      </div>
+      <div className={styles.links}>
+        <Link href="/projects">{t.navbar.projects}</Link>
+        <Link href="/services">{t.navbar.services}</Link>
+        <Link href="/contact">{t.navbar.contact}</Link>
+        <Link href="/">{t.navbar.home}</Link>
+        <Link href="/about">{t.navbar.about}</Link>
+        <button 
+          onClick={toggleLanguage} 
+          className={styles.langButton}
+        >
+          {language === 'fr' ? 'EN' : 'FR'}
+        </button>
+        <Link href="/cart" className={styles.cart}>
+          🛒
+        </Link>
       </div>
     </nav>
   );

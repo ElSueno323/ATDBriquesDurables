@@ -1,0 +1,76 @@
+{
+  "common": {
+    "brand": "ATD Briques Durables",
+    "cart": "Panier",
+    "language": "Langue"
+  },
+  "navbar": {
+    "projects": "Projets",
+    "services": "Services",
+    "contact": "Contact",
+    "home": "Accueil",
+    "about": "À propos"
+  },
+  "home": {
+    "hero": {
+      "title": "ATD Briques Durables",
+      "description": "Votre partenaire pour des constructions durables.",
+      "cta": "VOIR NOS RÉALISATIONS"
+    },
+    "features": {
+      "building": {
+        "title": "Construction",
+        "desc": "Construction de bâtiments de qualité."
+      },
+      "repairs": {
+        "title": "Réparations",
+        "desc": "Réparations rapides et efficaces."
+      },
+      "demolition": {
+        "title": "Démolition",
+        "desc": "Démolition sécurisée et propre."
+      },
+      "foundation": {
+        "title": "Fondations",
+        "desc": "Fondations solides et durables."
+      },
+      "painting": {
+        "title": "Peinture & Extérieur",
+        "desc": "Finitions soignées pour l'extérieur."
+      },
+      "site": {
+        "title": "Gestion de chantier",
+        "desc": "Suivi rigoureux des chantiers."
+      }
+    },
+    "bottom": {
+      "eco": {
+        "title": "Construction écologique",
+        "desc": "Respect de l'environnement."
+      },
+      "tech": {
+        "title": "Technologie moderne",
+        "desc": "Utilisation des dernières innovations."
+      },
+      "quality": {
+        "title": "Gestion de qualité",
+        "desc": "Suivi rigoureux des chantiers."
+      },
+      "centerTitle": "Aucun projet trop grand ou trop petit",
+      "centerDesc": "Nous nous adaptons à tous vos besoins.",
+      "consultation": "Obtenez une consultation gratuite",
+      "estimateBtn": "DEMANDE DE DEVIS EN LIGNE"
+    }
+  },
+  "contact": {
+    "form": {
+      "namePlaceholder": "Votre nom",
+      "emailPlaceholder": "Votre email",
+      "messagePlaceholder": "Votre message",
+      "submit": "Envoyer"
+    }
+  },
+  "footer": {
+    "devInfo": "Développé par ElSueno - 2024 © Tous droits réservés"
+  }
+} 

@@ -1,0 +1,76 @@
+{
+  "common": {
+    "brand": "ATD Briques Durables",
+    "cart": "Cart",
+    "language": "Language"
+  },
+  "navbar": {
+    "projects": "Projects",
+    "services": "Services",
+    "contact": "Contact",
+    "home": "Home",
+    "about": "About"
+  },
+  "home": {
+    "hero": {
+      "title": "ATD Briques Durables",
+      "description": "Your partner for sustainable construction.",
+      "cta": "VIEW OUR WORK"
+    },
+    "features": {
+      "building": {
+        "title": "Building Construction",
+        "desc": "High-quality building construction."
+      },
+      "repairs": {
+        "title": "Repairs",
+        "desc": "Fast and efficient repairs."
+      },
+      "demolition": {
+        "title": "Demolition",
+        "desc": "Safe and clean demolition."
+      },
+      "foundation": {
+        "title": "Foundation",
+        "desc": "Strong and durable foundations."
+      },
+      "painting": {
+        "title": "Painting & Exterior",
+        "desc": "Careful exterior finishing."
+      },
+      "site": {
+        "title": "Site Management",
+        "desc": "Thorough site management."
+      }
+    },
+    "bottom": {
+      "eco": {
+        "title": "Eco Friendly Construction",
+        "desc": "Environmentally friendly."
+      },
+      "tech": {
+        "title": "Modern Technology",
+        "desc": "Using the latest innovations."
+      },
+      "quality": {
+        "title": "Quality Management",
+        "desc": "Thorough site supervision."
+      },
+      "centerTitle": "No Project Too Big Or Too Small",
+      "centerDesc": "We adapt to all your needs.",
+      "consultation": "Get Free Consultation",
+      "estimateBtn": "ONLINE ESTIMATE FORM"
+    }
+  },
+  "contact": {
+    "form": {
+      "namePlaceholder": "Your name",
+      "emailPlaceholder": "Your email",
+      "messagePlaceholder": "Your message",
+      "submit": "Send"
+    }
+  },
+  "footer": {
+    "devInfo": "Developed by ElSueno - 2024 © All rights reserved"
+  }
+} 

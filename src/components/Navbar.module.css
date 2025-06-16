@@ -1,34 +1,59 @@
 .navbar {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   padding: 1rem 2rem;
-  background: #fff;
-  border-bottom: 1px solid #eee;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
   z-index: 100;
 }
+
 .logo {
+  font-size: 1.5rem;
   font-weight: bold;
-  font-size: 1.3rem;
-  letter-spacing: 1px;
 }
-.navLinks {
+
+.logo a {
+  text-decoration: none;
+  color: #333;
+}
+
+.links {
   display: flex;
+  align-items: center;
   gap: 2rem;
-  list-style: none;
 }
-.navLinks li a {
-  color: #171717;
+
+.links a {
+  text-decoration: none;
+  color: #333;
   font-weight: 500;
-  transition: color 0.2s;
+  transition: color 0.3s ease;
 }
-.navLinks li a:hover {
-  color: #d84315;
+
+.links a:hover {
+  color: #007bff;
 }
+
 .cart {
-  color: #d84315;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.langButton {
+  padding: 0.5rem 1rem;
+  border: 2px solid #007bff;
+  border-radius: 4px;
+  background-color: transparent;
+  color: #007bff;
+  font-weight: bold;
   cursor: pointer;
-  margin-left: 1rem;
+  transition: all 0.3s ease;
+}
+
+.langButton:hover {
+  background-color: #007bff;
+  color: white;
 } 
