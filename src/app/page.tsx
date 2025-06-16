@@ -11,8 +11,8 @@ export default function Home() {
       {/* Section Hero */}
       <section className={styles.hero}>
         <div className={styles.heroOverlay}>
-          <h1>{t.home.hero.title}</h1>
-          <p>{t.home.hero.description}</p>
+          <h1 style={{ color: 'white' }}>{t.home.hero.title}</h1>
+          <p >{t.home.hero.description}</p>
           <button className={styles.cta}>{t.home.hero.cta}</button>
         </div>
       </section>
