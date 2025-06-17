@@ -63,10 +63,19 @@
     }
   },
   "contact": {
-    "form": {
-      "namePlaceholder": "Your name",
-      "emailPlaceholder": "Your email",
-      "messagePlaceholder": "Your message",
+    "formConsultation": {
+      "title": "Consultation Request",
+      "nameTitle": "Your name",
+      "namePlaceholder": "Sam Son",
+      "emailTitle": "Your email",
+      "emailPlaceholder": "samson@example.com",
+      "companyTitle": "Your company",
+      "companyPlaceholder": "Samson Construction",
+      "phoneTitle": "Your phone",
+      "phonePlaceholder": "+01 23 45 67 89",
+      "messageTitle": "Your message",
+      "messagePlaceholder": "I need a quote for a project",
+      "success": "Your request has been sent!",
       "submit": "Send"
     }
   },

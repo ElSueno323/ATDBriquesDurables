@@ -63,10 +63,19 @@
     }
   },
   "contact": {
-    "form": {
-      "namePlaceholder": "Votre nom",
-      "emailPlaceholder": "Votre email",
-      "messagePlaceholder": "Votre message",
+    "formConsultation": {
+      "title": "Demande de consultation",
+      "nameTitle": "Votre nom",
+      "namePlaceholder": "Sam Son",
+      "emailTitle": "Votre email",
+      "emailPlaceholder": "samson@example.com",
+      "companyTitle": "Votre entreprise",
+      "companyPlaceholder": "Samson Construction",
+      "phoneTitle": "Votre téléphone",
+      "phonePlaceholder": "+01 23 45 67 89",
+      "messageTitle": "Votre message",
+      "messagePlaceholder": "Je souhaite obtenir un devis pour un projet",
+      "success": "Votre demande a été envoyée !",
       "submit": "Envoyer"
     }
   },

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import styles from "./Navbar.module.css";
 import { useTranslation } from "@/utils/useTranslation";
+import { FiShoppingCart } from "react-icons/fi";
 
 export default function Navbar() {
   const { t, language, setLanguage } = useTranslation();
@@ -28,8 +29,8 @@ export default function Navbar() {
         >
           {language === 'fr' ? 'EN' : 'FR'}
         </button>
-        <Link href="/cart" className={styles.cart}>
-          🛒
+        <Link href="/cart" className={styles.cart} aria-label="Panier">
+          <FiShoppingCart size={22} color="#222" />
         </Link>
       </div>
     </nav>
