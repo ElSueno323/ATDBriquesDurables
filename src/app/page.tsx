@@ -3,16 +3,20 @@
 import { useTranslation } from "@/utils/useTranslation";
 import styles from "./page.module.css";
 import Image from "next/image";
+import EstimateModal from "@/components/EstimateModal";
+import { useState } from "react";
 
 export default function Home() {
   const { t } = useTranslation();
+  const [openModal, setOpenModal] = useState(false);
+
   return (
     <div className={styles.home}>
       {/* Section Hero */}
       <section className={styles.hero}>
         <div className={styles.heroOverlay}>
-          <h1>{t.home.hero.title}</h1>
-          <p>{t.home.hero.description}</p>
+          <h1 style={{ color: 'white' }}>{t.home.hero.title}</h1>
+          <p >{t.home.hero.description}</p>
           <button className={styles.cta}>{t.home.hero.cta}</button>
         </div>
       </section>
@@ -61,17 +65,22 @@ export default function Home() {
           <h4>{t.home.bottom.quality.title}</h4>
           <p>{t.home.bottom.quality.desc}</p>
         </div>
-        <div className={styles.bottomColCenter}>
-          <h2>{t.home.bottom.centerTitle}</h2>
-          <p>{t.home.bottom.centerDesc}</p>
-        </div>
-        <div className={styles.bottomColRight}>
-          <div className={styles.consultationBox}>
-            <span>{t.home.bottom.consultation}</span>
-            <button className={styles.estimateBtn}>{t.home.bottom.estimateBtn}</button>
+        
+        <div>
+          <div className={styles.bottomColCenter}>
+            <h2>{t.home.bottom.centerTitle}</h2>
+            <p>{t.home.bottom.centerDesc}</p>
+          </div>
+          <div className={styles.bottomColRight}>
+            <div className={styles.consultationBox}>
+              <span>{t.home.bottom.consultation}</span>
+              <button className={styles.estimateBtn} onClick={() => setOpenModal(true)}>{t.home.bottom.estimateBtn}</button>
+            </div>
           </div>
         </div>
+        
       </section>
+      <EstimateModal open={openModal} onClose={() => setOpenModal(false)} />
     </div>
   );
 }
