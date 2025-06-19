@@ -56,8 +56,8 @@ export default function Home() {
       </section>
 
       {/* Section 3 colonnes */}
-      <section className={styles.bottomSection}>
-        <div className={styles.bottomColLeft}>
+      <section className={styles.gridSection}>
+        <div className={styles.gridItemLeft}>
           <h4>{t.home.bottom.eco.title}</h4>
           <p>{t.home.bottom.eco.desc}</p>
           <h4>{t.home.bottom.tech.title}</h4>
@@ -65,20 +65,16 @@ export default function Home() {
           <h4>{t.home.bottom.quality.title}</h4>
           <p>{t.home.bottom.quality.desc}</p>
         </div>
-        
-        <div>
-          <div className={styles.bottomColCenter}>
-            <h2>{t.home.bottom.centerTitle}</h2>
-            <p>{t.home.bottom.centerDesc}</p>
-          </div>
-          <div className={styles.bottomColRight}>
-            <div className={styles.consultationBox}>
-              <span>{t.home.bottom.consultation}</span>
-              <button className={styles.estimateBtn} onClick={() => setOpenModal(true)}>{t.home.bottom.estimateBtn}</button>
-            </div>
+        <div className={styles.gridItemCenter}>
+          <h2>{t.home.bottom.centerTitle}</h2>
+          <p>{t.home.bottom.centerDesc}</p>
+        </div>
+        <div className={styles.gridItemRight}>
+          <div className={styles.consultationBox}>
+            <span>{t.home.bottom.consultation}</span>
+            <button className={styles.estimateBtn} onClick={() => setOpenModal(true)}>{t.home.bottom.estimateBtn}</button>
           </div>
         </div>
-        
       </section>
       <EstimateModal open={openModal} onClose={() => setOpenModal(false)} />
     </div>

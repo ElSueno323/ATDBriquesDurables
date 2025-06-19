@@ -315,19 +315,21 @@ a.secondary {
   margin-bottom: 1.2rem;
 }
 .estimateBtn {
-  background: var(--theme-red-off);
-  color: #fff;
-  border: none;
+  background: var(--theme-red-off) transparent;
+  color: var(--theme-red-off);
+  border: 2px solid var(--theme-red-off);
   padding: 0.8rem 1.5rem;
   font-size: 1rem;
   border-radius: 4px;
   cursor: pointer;
   font-weight: 600;
   letter-spacing: 1px;
-  transition: background 0.5s;
+  transition: background 1s;
 }
 .estimateBtn:hover {
   background: var(--theme-red);
+  color: #222;
+
 }
 
 @media (max-width: 900px) {
@@ -388,5 +390,77 @@ a.secondary {
     width: 100%;
     max-width: 100%;
     padding: 0;
+  }
+}
+
+/* Nouvelle grille pour la section du bas */
+.gridSection {
+  display: grid;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  overflow: hidden;
+  padding: 0;
+}
+
+.gridItemLeft {
+  grid-column: 1 ;
+  grid-row: 1 / 4 ;
+  background: var(--theme-red);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 2.2rem 1.5rem;
+}
+.gridItemCenter {
+  grid-column: 2 / 4 ;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background: var(--theme-beige);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2.2rem 2rem;
+}
+.gridItemCenter h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.gridItemCenter p {
+  font-size: 1.05rem;
+  color: #444;
+}
+.gridItemRight {
+  grid-column: 2/4;
+  grid-row: 3;
+  background: #222;
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .gridSection {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0;
+  }
+  .gridItemLeft, .gridItemCenter, .gridItemRight {
+    width: 100%;
+    max-width: 100%;
+    padding: 1.2rem 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .gridSection {
+    padding: 0;
+    margin-top: 1.2rem;
+  }
+  .gridItemLeft, .gridItemCenter, .gridItemRight {
+    padding: 0.8rem 0.5rem;
   }
 }
