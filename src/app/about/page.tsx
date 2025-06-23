@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import styles from './about.module.css';
 import Reviews from '../../components/Reviews';
+import Contact from '../../components/Contact';
 import { useTranslation } from '../../utils/useTranslation';
 
 function Accordion() {
@@ -64,6 +65,7 @@ export default function About() {
         <Accordion />
       </div>
     </div>
+    <Contact />
     </>
   );
 } 

@@ -63,6 +63,18 @@
     }
   },
   "contact": {
+    "title": "Contact Us",
+    "form": {
+      "namePlaceholder": "Name",
+      "emailPlaceholder": "Email",
+      "messagePlaceholder": "Message",
+      "sendButton": "SEND MESSAGE"
+    },
+    "info": {
+      "defaultAddress": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "defaultPhone": "+00 123 456 78",
+      "defaultEmail": "info@ATDBriquesDurables.com"
+    },
     "formConsultation": {
       "title": "Demande de consultation",
       "nameTitle": "Votre nom",
