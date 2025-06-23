@@ -1,0 +1,64 @@
+{
+  "reviews": [
+    {
+      "id": 1,
+      "stars": 5,
+      "comment": "Service exceptionnel ! L'équipe d'ATD Briques Durables a rénové notre maison avec un professionnalisme remarquable. Travail soigné et dans les délais.",
+      "clientName": "Marie Dubois"
+    },
+    {
+      "id": 2,
+      "stars": 5,
+      "comment": "Très satisfait de la construction de notre extension. Équipe compétente, matériaux de qualité et respect du budget annoncé.",
+      "clientName": "Pierre Martin"
+    },
+    {
+      "id": 3,
+      "stars": 5,
+      "comment": "Travaux de démolition réalisés avec précision et sécurité. Je recommande vivement cette entreprise pour tous vos projets de construction.",
+      "clientName": "Sophie Bernard"
+    }
+  ],
+  "companyLogos": [
+    {
+      "id": 1,
+      "name": "CFAO",
+      "logo": "/logos/cfao.svg"
+    },
+    {
+      "id": 2,
+      "name": "CrossWell",
+      "logo": "/logos/crosswell.svg"
+    },
+    {
+      "id": 3,
+      "name": "Fitch",
+      "logo": "/logos/fitch.svg"
+    },
+    {
+      "id": 4,
+      "name": "Lab Life",
+      "logo": "/logos/lab-life.svg"
+    },
+    {
+      "id": 5,
+      "name": "Loudbox",
+      "logo": "/logos/loudbox.svg"
+    },
+    {
+      "id": 6,
+      "name": "Real Wave",
+      "logo": "/logos/real-wave.svg"
+    },
+    {
+      "id": 7,
+      "name": "Inner",
+      "logo": "/logos/inner.svg"
+    },
+    {
+      "id": 8,
+      "name": "Suire",
+      "logo": "/logos/suire.svg"
+    }
+  ]
+} 

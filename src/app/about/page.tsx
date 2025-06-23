@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
 import styles from './about.module.css';
+import Reviews from '../../components/Reviews';
 
 const faqs = [
   {
@@ -62,10 +63,12 @@ function Accordion() {
 
 export default function About() {
   return (
-    <div className={styles.aboutGrid}>
+    <>
+      <Reviews />
+      <div className={styles.aboutGrid}>
       {/* Colonne gauche */}
       <div className={styles.leftCol}>
-        <h2 className={styles.title}>Let's Build<br />Something<br />Together</h2>
+        <h2 className={styles.title}>Let&apos;s Build<br />Something<br />Together</h2>
         <div className={styles.underline}></div>
         <p className={styles.desc}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, dignissim tristique tellus sed faucibus nullam. Tincidunt mauris ut quam sed mauris proin feugiat.
@@ -77,5 +80,6 @@ export default function About() {
         <Accordion />
       </div>
     </div>
+    </>
   );
 } 
