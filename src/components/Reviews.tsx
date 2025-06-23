@@ -2,6 +2,7 @@
 import React from 'react';
 import styles from './Reviews.module.css';
 import reviewsData from '../data/reviews.json';
+import { useTranslation } from '../utils/useTranslation';
 
 interface ReviewProps {
   stars: number;
@@ -28,18 +29,23 @@ function Review({ stars, comment, clientName }: ReviewProps) {
 }
 
 export default function Reviews() {
+  const { t } = useTranslation();
+
   return (
     <section className={styles.reviewsSection}>
       <div className={styles.container}>
         {/* Titre de la section */}
-        <h2 className={styles.title}>Témoignages Clients</h2>
+        <h2 
+          className={styles.title}
+          dangerouslySetInnerHTML={{ __html: t.reviews.title }}
+        />
         
         {/* Grille des témoignages */}
         <div className={styles.reviewsGrid}>
-          {reviewsData.reviews.map((review) => (
+          {t.reviews.testimonials.map((review, index) => (
             <Review
-              key={review.id}
-              stars={review.stars}
+              key={index}
+              stars={5}
               comment={review.comment}
               clientName={review.clientName}
             />

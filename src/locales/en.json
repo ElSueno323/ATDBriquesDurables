@@ -79,6 +79,50 @@
       "submit": "Send"
     }
   },
+  "reviews": {
+    "title": "Client Testimonials",
+    "testimonials": [
+      {
+        "comment": "Exceptional service! The ATD Briques Durables team renovated our house with remarkable professionalism. Quality work delivered on time.",
+        "clientName": "Marie Dubois"
+      },
+      {
+        "comment": "Very satisfied with our extension construction. Competent team, quality materials and respect for the announced budget.",
+        "clientName": "Pierre Martin"
+      },
+      {
+        "comment": "Demolition work carried out with precision and safety. I highly recommend this company for all your construction projects.",
+        "clientName": "Sophie Bernard"
+      }
+    ]
+  },
+  "about": {
+    "title": "Let&apos;s Build<br />Something<br />Together",
+    "description": "ATD Briques Durables turns your construction projects into reality. With over 15 years of experience, we are your trusted partner for all your sustainable construction needs.",
+    "ctaButton": "GET IN TOUCH",
+    "faq": [
+      {
+        "question": "What types of construction projects do you carry out?",
+        "answer": "We carry out all types of projects: new construction, renovation, extension, demolition, foundations and exterior finishing work."
+      },
+      {
+        "question": "Do you offer free quotes?",
+        "answer": "Yes, we offer free consultations and quotes for all your projects. Our team travels to assess your needs."
+      },
+      {
+        "question": "What are your response times?",
+        "answer": "Deadlines vary depending on the complexity of the project. We are committed to respecting agreed deadlines and keeping you informed throughout the site."
+      },
+      {
+        "question": "Do you use eco-friendly materials?",
+        "answer": "Absolutely! We prioritize sustainable and environmentally friendly materials in all our construction projects."
+      },
+      {
+        "question": "Are you insured for the work?",
+        "answer": "Yes, we have all the necessary insurance: civil liability, ten-year warranty and construction insurance for your peace of mind."
+      }
+    ]
+  },
   "footer": {
     "devInfo": "Developed by ElSueno - 2024 © All rights reserved"
   }
