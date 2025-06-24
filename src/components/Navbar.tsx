@@ -18,10 +18,9 @@ export default function Navbar() {
         <Link href="/">ATD Briques Durables</Link>
       </div>
       <div className={styles.links}>
+        <Link href="/">{t.navbar.home}</Link>
         <Link href="/projects">{t.navbar.projects}</Link>
         <Link href="/services">{t.navbar.services}</Link>
-        <Link href="/contact">{t.navbar.contact}</Link>
-        <Link href="/">{t.navbar.home}</Link>
         <Link href="/about">{t.navbar.about}</Link>
         <button 
           onClick={toggleLanguage} 
