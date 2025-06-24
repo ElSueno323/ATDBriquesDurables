@@ -4,12 +4,11 @@
     "cart": "Panier",
     "language": "Langue"
   },
-  "navbar": {
-    "projects": "Projets",
-    "services": "Services",
-    "home": "Accueil",
-    "about": "À propos"
-  },
+  "navbar": [
+    {"name": "Projets","url": "/projects"},
+    {"name": "Accueil","url": "/"},
+    {"name": "À propos","url": "/about"}
+  ],
   "home": {
     "hero": {
       "title": "ATD Briques Durables",

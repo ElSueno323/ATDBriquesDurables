@@ -14,12 +14,10 @@ export default function Navbar() {
     setLanguage(language === 'fr' ? 'en' : 'fr');
   };
 
-  const navItems = [
-    { href: '/', label: t.navbar.home },
-    { href: '/projects', label: t.navbar.projects },
-    { href: '/services', label: t.navbar.services },
-    { href: '/about', label: t.navbar.about },
-  ];
+  const navItems = t.navbar.map((item) => ({
+    href: item.url,
+    label: item.name
+  }));
 
   const isActive = (href: string) => {
     if (!pathname) return false;
