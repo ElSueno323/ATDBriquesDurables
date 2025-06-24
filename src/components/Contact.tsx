@@ -13,6 +13,9 @@ export default function Contact() {
     email: '',
     message: ''
   });
+  const [isLoading, setIsLoading] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [errorMessage, setErrorMessage] = useState('');
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -22,12 +25,36 @@ export default function Contact() {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Ici vous pouvez ajouter la logique d'envoi du formulaire
-    console.log('Form submitted:', formData);
-    // Reset form
-    setFormData({ name: '', email: '', message: '' });
+    setIsLoading(true);
+    setSubmitStatus('idle');
+    setErrorMessage('');
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setSubmitStatus('success');
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        const errorData = await response.json();
+        setSubmitStatus('error');
+        setErrorMessage(errorData.error || 'Une erreur est survenue');
+      }
+         } catch (error) {
+       console.error('Erreur lors de l\'envoi:', error);
+       setSubmitStatus('error');
+       setErrorMessage('Erreur de connexion. Veuillez réessayer.');
+     } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -70,9 +97,21 @@ export default function Contact() {
               required
             />
           </div>
-          <button type="submit" className={styles.sendButton}>
-            {t.contact.form.sendButton}
+          <button type="submit" className={styles.sendButton} disabled={isLoading}>
+            {isLoading ? 'Envoi en cours...' : t.contact.form.sendButton}
           </button>
+          
+          {submitStatus === 'success' && (
+            <div style={{ color: 'green', marginTop: '10px', fontWeight: 'bold' }}>
+              Message envoyé avec succès !
+            </div>
+          )}
+          
+          {submitStatus === 'error' && (
+            <div style={{ color: 'red', marginTop: '10px', fontWeight: 'bold' }}>
+              {errorMessage}
+            </div>
+          )}
         </form>
       </div>
 

@@ -58,7 +58,6 @@ export default function About() {
         <p className={styles.desc}>
           {t.about.description}
         </p>
-        <button className={styles.ctaBtn}>{t.about.ctaButton}</button>
       </div>
       {/* Colonne droite */}
       <div className={styles.rightCol}>

@@ -65,10 +65,10 @@
   "contact": {
     "title": "Contact Us",
     "form": {
-      "namePlaceholder": "Name",
+      "namePlaceholder": "Nom",
       "emailPlaceholder": "Email",
       "messagePlaceholder": "Message",
-      "sendButton": "SEND MESSAGE"
+      "sendButton": "ENVOI DE MESSAGE"
     },
     "info": {
       "defaultAddress": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
