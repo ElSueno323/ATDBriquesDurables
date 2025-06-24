@@ -9,6 +9,8 @@
   --secondary-background: #f8f9fa;
   --border-color: #e9ecef;
   --hover-color: #0056b3;
+
+  --background-overlay-dark:rgba(30, 20, 20, 0.82)
 }
 
 * {

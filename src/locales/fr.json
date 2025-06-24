@@ -4,12 +4,11 @@
     "cart": "Panier",
     "language": "Langue"
   },
-  "navbar": {
-    "projects": "Projets",
-    "services": "Services",
-    "home": "Accueil",
-    "about": "À propos"
-  },
+  "navbar": [
+    {"name": "Projets","url": "/projects"},
+    {"name": "Accueil","url": "/"},
+    {"name": "À propos","url": "/about"}
+  ],
   "home": {
     "hero": {
       "title": "ATD Briques Durables",
@@ -135,6 +134,52 @@
     ]
   },
   "footer": {
-    "devInfo": "Développé par ElSueno - 2024 © Tous droits réservés"
+    "devInfo": "Développé par Gabriel Espinosa - 2025 © Tous droits réservés"
+  },
+  "projects": {
+    "heroTitle": "Projets",
+    "heroDesc": "Découvrez nos réalisations en construction durable : maisons écologiques, rénovations urbaines et bien plus encore.",
+    "headerTitle": "Demander un devis pour votre projet",
+    "estimateBtn": "Demander un devis",
+    "projectList": [
+      {
+        "title": "Maison écologique",
+        "desc": "Construction d'une maison basse consommation avec matériaux biosourcés."
+      },
+      {
+        "title": "Rénovation urbaine",
+        "desc": "Transformation d'un immeuble ancien en logements modernes et durables."
+      },
+      {
+        "title": "Extension brique",
+        "desc": "Ajout d'une extension en ossature brique à une maison familiale."
+      }
+    ],
+    "featureTitle": "Aucun projet trop grand ou trop petit",
+    "featureText1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, dignissim tristique tellus sed faucibus nullam. Tincidunt mauris ut quam sed mauris proin feugiat. Scelerisque lorem posuere iaculis nunc amet phasellus.",
+    "featureText2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, dignissim tristique tellus sed faucibus nullam.",
+    "featureBtn": "En savoir plus",
+    "featureStat1Number": "12",
+    "featureStat1Label": "Contributeurs",
+    "featureStat2Number": "250",
+    "featureStat2Label": "Projets réalisés",
+    "latestTitle": "Derniers projets",
+    "latestList": [
+      {
+        "img": "/bridge.jpg",
+        "title": "Pont écologique",
+        "desc": "Construction d'un pont en matériaux recyclés, respectueux de l'environnement."
+      },
+      {
+        "img": "/city.jpg",
+        "title": "Tour urbaine",
+        "desc": "Rénovation d'une tour de bureaux en espace de coworking moderne et durable."
+      },
+      {
+        "img": "/plan.jpg",
+        "title": "Plan d'architecte",
+        "desc": "Conception d'un projet architectural innovant pour un quartier résidentiel."
+      }
+    ]
   }
 } 
