@@ -4,12 +4,11 @@
     "cart": "Cart",
     "language": "Language"
   },
-  "navbar": {
-    "projects": "Projects",
-    "services": "Services",
-    "home": "Home",
-    "about": "About"
-  },
+  "navbar": [
+    {"name": "Projects","url": "/projects"},
+    {"name": "Home","url": "/"},
+    {"name": "About","url": "/about"}
+  ],
   "home": {
     "hero": {
       "title": "ATD Briques Durables",
@@ -135,6 +134,52 @@
     ]
   },
   "footer": {
-    "devInfo": "Developed by ElSueno - 2024 © All rights reserved"
+    "devInfo": "Developed by Gabriel Espinosa - 2025 © All rights reserved"
+  },
+  "projects": {
+    "heroTitle": "Projects",
+    "heroDesc": "Discover our achievements in sustainable construction: eco-friendly houses, urban renovations, wood extensions and much more.",
+    "headerTitle": "Get a quote for Your Project",
+    "estimateBtn": "Free Quote",
+    "projectList": [
+      {
+        "title": "Eco-friendly House",
+        "desc": "Construction of a low-energy house with bio-based materials."
+      },
+      {
+        "title": "Urban Renovation",
+        "desc": "Transformation of an old building into modern and sustainable housing."
+      },
+      {
+        "title": "Wood Extension",
+        "desc": "Addition of a timber frame extension to a family house."
+      }
+    ],
+    "featureTitle": "No Project Too Big Or Too Small",
+    "featureText1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, dignissim tristique tellus sed faucibus nullam. Tincidunt mauris ut quam sed mauris proin feugiat. Scelerisque lorem posuere iaculis nunc amet phasellus.",
+    "featureText2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, dignissim tristique tellus sed faucibus nullam.",
+    "featureBtn": "Learn more",
+    "featureStat1Number": "12",
+    "featureStat1Label": "Contributors",
+    "featureStat2Number": "250",
+    "featureStat2Label": "Completed projects",
+    "latestTitle": "Latest Projects",
+    "latestList": [
+      {
+        "img": "/bridge.jpg",
+        "title": "Eco Bridge",
+        "desc": "Construction of a bridge using recycled, eco-friendly materials."
+      },
+      {
+        "img": "/city.jpg",
+        "title": "Urban Tower",
+        "desc": "Renovation of an office tower into a modern, sustainable coworking space."
+      },
+      {
+        "img": "/plan.jpg",
+        "title": "Architect Plan",
+        "desc": "Design of an innovative architectural project for a residential district."
+      }
+    ]
   }
 } 
