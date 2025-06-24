@@ -7,7 +7,6 @@
   "navbar": {
     "projects": "Projets",
     "services": "Services",
-    "contact": "Contact",
     "home": "Accueil",
     "about": "À propos"
   },
@@ -63,6 +62,18 @@
     }
   },
   "contact": {
+    "title": "Contact Us",
+    "form": {
+      "namePlaceholder": "Nom",
+      "emailPlaceholder": "Email",
+      "messagePlaceholder": "Message",
+      "sendButton": "ENVOI DE MESSAGE"
+    },
+    "info": {
+      "defaultAddress": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "defaultPhone": "+00 123 456 78",
+      "defaultEmail": "info@ATDBriquesDurables.com"
+    },
     "formConsultation": {
       "title": "Demande de consultation",
       "nameTitle": "Votre nom",
@@ -78,6 +89,50 @@
       "success": "Votre demande a été envoyée !",
       "submit": "Envoyer"
     }
+  },
+  "reviews": {
+    "title": "Témoignages Clients",
+    "testimonials": [
+      {
+        "comment": "Service exceptionnel ! L'équipe d'ATD Briques Durables a rénové notre maison avec un professionnalisme remarquable. Travail soigné et dans les délais.",
+        "clientName": "Marie Dubois"
+      },
+      {
+        "comment": "Très satisfait de la construction de notre extension. Équipe compétente, matériaux de qualité et respect du budget annoncé.",
+        "clientName": "Pierre Martin"
+      },
+      {
+        "comment": "Travaux de démolition réalisés avec précision et sécurité. Je recommande vivement cette entreprise pour tous vos projets de construction.",
+        "clientName": "Sophie Bernard"
+      }
+    ]
+  },
+  "about": {
+    "title": "Construisons<br />Quelque chose<br />Ensemble",
+    "description": "ATD Briques Durables transforme vos projets de construction en réalité. Avec plus de 15 ans d'expérience, nous sommes votre partenaire de confiance pour tous vos besoins en construction durable.",
+    "ctaButton": "NOUS CONTACTER",
+    "faq": [
+      {
+        "question": "Quels types de projets de construction réalisez-vous ?",
+        "answer": "Nous réalisons tous types de projets : construction neuve, rénovation, extension, démolition, fondations et travaux de finition extérieure."
+      },
+      {
+        "question": "Proposez-vous des devis gratuits ?",
+        "answer": "Oui, nous offrons des consultations et devis gratuits pour tous vos projets. Notre équipe se déplace pour évaluer vos besoins."
+      },
+      {
+        "question": "Quels sont vos délais d'intervention ?",
+        "answer": "Les délais varient selon la complexité du projet. Nous nous engageons à respecter les échéances convenues et à vous tenir informé tout au long du chantier."
+      },
+      {
+        "question": "Utilisez-vous des matériaux écologiques ?",
+        "answer": "Absolument ! Nous privilégions les matériaux durables et respectueux de l'environnement dans tous nos projets de construction."
+      },
+      {
+        "question": "Êtes-vous assurés pour les travaux ?",
+        "answer": "Oui, nous disposons de toutes les assurances nécessaires : responsabilité civile, décennale et dommages-ouvrage pour votre tranquillité."
+      }
+    ]
   },
   "footer": {
     "devInfo": "Développé par ElSueno - 2024 © Tous droits réservés"

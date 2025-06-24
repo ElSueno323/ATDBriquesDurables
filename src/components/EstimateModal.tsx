@@ -14,6 +14,8 @@ export default function EstimateModal({ open, onClose }: { open: boolean; onClos
   });
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
   const [sent, setSent] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
 
   if (!open) return null;
 
@@ -29,13 +31,43 @@ export default function EstimateModal({ open, onClose }: { open: boolean; onClos
     return newErrors;
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const newErrors = validate();
     setErrors(newErrors);
+    
     if (Object.keys(newErrors).length === 0) {
-      setSent(true);
-      // Ici, tu pourrais envoyer le formulaire à une API
+      setIsLoading(true);
+      setErrorMessage('');
+      
+      try {
+        const response = await fetch('/api/estimate', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(form),
+        });
+
+        if (response.ok) {
+          setSent(true);
+          setForm({
+            name: "",
+            company: "",
+            email: "",
+            phone: "",
+            description: ""
+          });
+        } else {
+          const errorData = await response.json();
+          setErrorMessage(errorData.error || 'Une erreur est survenue');
+        }
+      } catch (error) {
+        console.error('Erreur lors de l\'envoi:', error);
+        setErrorMessage('Erreur de connexion. Veuillez réessayer.');
+      } finally {
+        setIsLoading(false);
+      }
     }
   };
 
@@ -71,7 +103,15 @@ export default function EstimateModal({ open, onClose }: { open: boolean; onClos
               <textarea name="description" value={form.description} onChange={handleChange} required rows={4} placeholder={t.contact.formConsultation.messagePlaceholder}/>
               {errors.description && <span className={styles.error}>{errors.description}</span>}
             </label>
-            <button type="submit" className={styles.submitBtn}>{t.contact.formConsultation.submit}</button>
+            <button type="submit" className={styles.submitBtn} disabled={isLoading}>
+              {isLoading ? 'Envoi en cours...' : t.contact.formConsultation.submit}
+            </button>
+            
+            {errorMessage && (
+              <div style={{ color: 'red', marginTop: '10px', fontSize: '0.9rem' }}>
+                {errorMessage}
+              </div>
+            )}
           </form>
         )}
       </div>
