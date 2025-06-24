@@ -99,3 +99,9 @@ input:focus, textarea:focus {
   outline: none;
   border-color: var(--primary-color);
 }
+
+/* Transitions de page */
+main {
+  min-height: calc(100vh - 200px);
+  overflow-x: hidden;
+}
