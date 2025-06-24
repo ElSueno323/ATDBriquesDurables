@@ -1,6 +1,7 @@
 import TitleProjet from './TitleProjet';
 import ProjectsHeader from './ProjectsHeader';
 import ProjectFeatureSection from './ProjectFeatureSection';
+import ProjectsLatest from './ProjectsLatest';
 
 export default function ProjectsPage() {
   return (
@@ -8,6 +9,7 @@ export default function ProjectsPage() {
       <TitleProjet />
       <ProjectsHeader />
       <ProjectFeatureSection />
+      <ProjectsLatest />
     </>
   );
 } 

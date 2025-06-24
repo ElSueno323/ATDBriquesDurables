@@ -163,6 +163,24 @@
     "featureStat1Number": "12",
     "featureStat1Label": "Contributors",
     "featureStat2Number": "250",
-    "featureStat2Label": "Completed projects"
+    "featureStat2Label": "Completed projects",
+    "latestTitle": "Latest Projects",
+    "latestList": [
+      {
+        "img": "/bridge.jpg",
+        "title": "Eco Bridge",
+        "desc": "Construction of a bridge using recycled, eco-friendly materials."
+      },
+      {
+        "img": "/city.jpg",
+        "title": "Urban Tower",
+        "desc": "Renovation of an office tower into a modern, sustainable coworking space."
+      },
+      {
+        "img": "/plan.jpg",
+        "title": "Architect Plan",
+        "desc": "Design of an innovative architectural project for a residential district."
+      }
+    ]
   }
 } 

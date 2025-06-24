@@ -312,4 +312,92 @@
   .featureStatRed, .featureStatBlack {
     padding: 1rem 0;
   }
+}
+
+.latestSection {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 3.5rem auto;
+  text-align: center;
+}
+.latestTitle {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+.latestUnderline {
+  width: 48px;
+  height: 4px;
+  background: var(--theme-red);
+  border-radius: 2px;
+  margin: 0 auto 2.2rem auto;
+}
+.latestGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 2.2rem;
+  justify-items: center;
+}
+.latestCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border: 1.5px solid #e5e5e5;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  overflow: hidden;
+  width: 100%;
+  max-width: 350px;
+  min-height: 370px;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.latestCard:hover {
+  box-shadow: 0 8px 32px rgba(186, 30, 5, 0.13);
+  transform: translateY(-4px) scale(1.03);
+}
+.latestImgBox {
+  position: relative;
+  width: 100%;
+  height: 160px;
+  background: #eee;
+}
+.latestImg {
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.latestCardContent {
+  padding: 1.3rem 1.1rem 1.2rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+.latestCardTitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+  color: #222;
+  letter-spacing: 0.5px;
+}
+.latestCardDesc {
+  font-size: 0.98rem;
+  color: #444;
+  text-align: left;
+}
+
+@media (max-width: 900px) {
+  .latestGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .latestCard {
+    max-width: 100%;
+    min-height: 320px;
+  }
+  .latestImgBox {
+    height: 140px;
+  }
 } 

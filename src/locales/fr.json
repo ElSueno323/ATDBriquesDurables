@@ -163,6 +163,24 @@
     "featureStat1Number": "12",
     "featureStat1Label": "Contributeurs",
     "featureStat2Number": "250",
-    "featureStat2Label": "Projets réalisés"
+    "featureStat2Label": "Projets réalisés",
+    "latestTitle": "Derniers projets",
+    "latestList": [
+      {
+        "img": "/bridge.jpg",
+        "title": "Pont écologique",
+        "desc": "Construction d'un pont en matériaux recyclés, respectueux de l'environnement."
+      },
+      {
+        "img": "/city.jpg",
+        "title": "Tour urbaine",
+        "desc": "Rénovation d'une tour de bureaux en espace de coworking moderne et durable."
+      },
+      {
+        "img": "/plan.jpg",
+        "title": "Plan d'architecte",
+        "desc": "Conception d'un projet architectural innovant pour un quartier résidentiel."
+      }
+    ]
   }
 } 
