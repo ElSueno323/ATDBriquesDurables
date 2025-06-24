@@ -135,6 +135,34 @@
     ]
   },
   "footer": {
-    "devInfo": "Developed by ElSueno - 2024 © All rights reserved"
+    "devInfo": "Developed by Gabriel Espinosa - 2025 © All rights reserved"
+  },
+  "projects": {
+    "heroTitle": "Projects",
+    "heroDesc": "Discover our achievements in sustainable construction: eco-friendly houses, urban renovations, wood extensions and much more.",
+    "headerTitle": "Get a quote for Your Project",
+    "estimateBtn": "Free Quote",
+    "projectList": [
+      {
+        "title": "Eco-friendly House",
+        "desc": "Construction of a low-energy house with bio-based materials."
+      },
+      {
+        "title": "Urban Renovation",
+        "desc": "Transformation of an old building into modern and sustainable housing."
+      },
+      {
+        "title": "Wood Extension",
+        "desc": "Addition of a timber frame extension to a family house."
+      }
+    ],
+    "featureTitle": "No Project Too Big Or Too Small",
+    "featureText1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, dignissim tristique tellus sed faucibus nullam. Tincidunt mauris ut quam sed mauris proin feugiat. Scelerisque lorem posuere iaculis nunc amet phasellus.",
+    "featureText2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, dignissim tristique tellus sed faucibus nullam.",
+    "featureBtn": "Learn more",
+    "featureStat1Number": "12",
+    "featureStat1Label": "Contributors",
+    "featureStat2Number": "250",
+    "featureStat2Label": "Completed projects"
   }
 } 
