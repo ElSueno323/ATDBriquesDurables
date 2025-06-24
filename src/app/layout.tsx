@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import PageTransition from "@/components/PageTransition";
 import { TranslationProvider } from "@/utils/useTranslation";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -22,7 +23,11 @@ export default function RootLayout({
       <body className={inter.className}>
         <TranslationProvider>
           <Navbar />
-          <main>{children}</main>
+          <main>
+            <PageTransition>
+              {children}
+            </PageTransition>
+          </main>
           <Footer />
         </TranslationProvider>
       </body>

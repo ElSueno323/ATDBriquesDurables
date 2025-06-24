@@ -1,15 +1,32 @@
 'use client';
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import styles from "./Navbar.module.css";
 import { useTranslation } from "@/utils/useTranslation";
 import { FiShoppingCart } from "react-icons/fi";
 
 export default function Navbar() {
   const { t, language, setLanguage } = useTranslation();
+  const pathname = usePathname();
 
   const toggleLanguage = () => {
     setLanguage(language === 'fr' ? 'en' : 'fr');
+  };
+
+  const navItems = [
+    { href: '/', label: t.navbar.home },
+    { href: '/projects', label: t.navbar.projects },
+    { href: '/services', label: t.navbar.services },
+    { href: '/about', label: t.navbar.about },
+  ];
+
+  const isActive = (href: string) => {
+    if (!pathname) return false;
+    if (href === '/') {
+      return pathname === '/';
+    }
+    return pathname.startsWith(href);
   };
 
   return (
@@ -18,10 +35,17 @@ export default function Navbar() {
         <Link href="/">ATD Briques Durables</Link>
       </div>
       <div className={styles.links}>
-        <Link href="/">{t.navbar.home}</Link>
-        <Link href="/projects">{t.navbar.projects}</Link>
-        <Link href="/services">{t.navbar.services}</Link>
-        <Link href="/about">{t.navbar.about}</Link>
+        <div className={styles.navLinks}>
+          {navItems.map((item) => (
+            <Link 
+              key={item.href}
+              href={item.href} 
+              className={`${styles.navLink} ${isActive(item.href) ? styles.active : ''}`}
+            >
+              {item.label}
+            </Link>
+          ))}
+        </div>
         <button 
           onClick={toggleLanguage} 
           className={styles.langButton}

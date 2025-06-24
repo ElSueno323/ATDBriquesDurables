@@ -1,0 +1,11 @@
+.pageTransition {
+  transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+  opacity: 1;
+  transform: translateY(0);
+  width: 100%;
+}
+
+.pageTransition.transitioning {
+  opacity: 0.1;
+  transform: translateY(5px);
+} 
