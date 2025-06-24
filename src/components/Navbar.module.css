@@ -26,14 +26,59 @@
   gap: 2rem;
 }
 
-.links a, .langButton {
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 0.5rem 0;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navLink:hover {
+  color: var(--theme-red);
+}
+
+.navLink.active {
+  color: var(--theme-red);
+}
+
+.navLink.active::after {
+  content: '';
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: var(--theme-red);
+  border-radius: 2px;
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.langButton {
   text-decoration: none;
   color: #333;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
-.links a:hover, .langButton:hover {
+.langButton:hover {
   color: var(--theme-red);
 }
 
@@ -91,9 +136,15 @@
     width: 100%;
     justify-content: flex-start;
   }
-  .links a, .langButton {
+  .navLinks {
+    gap: 0.7rem;
+  }
+  .navLink, .langButton {
     font-size: 0.95rem;
     padding: 0.4rem 0.7rem;
+  }
+  .navLink.active::after {
+    bottom: 0;
   }
   .cart {
     font-size: 1.2rem;
