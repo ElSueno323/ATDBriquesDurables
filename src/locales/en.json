@@ -1,6 +1,6 @@
 {
   "common": {
-    "brand": "ATD Briques Durables",
+    "brand": "ATD Briques",
     "cart": "Cart",
     "language": "Language"
   },
@@ -11,7 +11,7 @@
   ],
   "home": {
     "hero": {
-      "title": "ATD Briques Durables",
+      "title": "ATD Briques",
       "description": "Your partner for sustainable construction.",
       "cta": "VIEW OUR WORK"
     },
@@ -93,7 +93,7 @@
     "title": "Client Testimonials",
     "testimonials": [
       {
-        "comment": "Exceptional service! The ATD Briques Durables team renovated our house with remarkable professionalism. Quality work delivered on time.",
+        "comment": "Exceptional service! The ATD Briques team renovated our house with remarkable professionalism. Quality work delivered on time.",
         "clientName": "Marie Dubois"
       },
       {
@@ -108,7 +108,7 @@
   },
   "about": {
     "title": "Let&apos;s Build<br />Something<br />Together",
-    "description": "ATD Briques Durables turns your construction projects into reality. With over 15 years of experience, we are your trusted partner for all your sustainable construction needs.",
+    "description": "ATD Briques turns your construction projects into reality. With over 15 years of experience, we are your trusted partner for all your sustainable construction needs.",
     "ctaButton": "GET IN TOUCH",
     "faq": [
       {

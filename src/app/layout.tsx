@@ -9,7 +9,7 @@ import { TranslationProvider } from "@/utils/useTranslation";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "ATD Briques Durables",
+  title: "ATD Briques",
   description: "Votre partenaire de confiance pour la construction durable",
 };
 
