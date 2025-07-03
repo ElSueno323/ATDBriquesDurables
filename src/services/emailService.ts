@@ -79,7 +79,7 @@ export async function sendContactEmail(data: ContactData) {
   const mailOptions = {
     from: process.env.SMTP_USER,
     to: process.env.SMTP_USER,
-    subject: 'Nouveau message de contact - ATD Briques Durables',
+    subject: 'Nouveau message de contact - ATD Briques',
     html: `
       <h2>Nouveau message de contact</h2>
       <p><strong>Nom:</strong> ${data.name}</p>
@@ -116,7 +116,7 @@ export async function sendEstimateEmail(data: EstimateData) {
   const mailOptions = {
     from: process.env.SMTP_USER,
     to: process.env.SMTP_USER,
-    subject: 'Nouvelle demande d\'estimation - ATD Briques Durables',
+    subject: 'Nouvelle demande d\'estimation - ATD Briques',
     html: `
       <h2>Nouvelle demande de devis</h2>
       <p><strong>Nom:</strong> ${data.name}</p>

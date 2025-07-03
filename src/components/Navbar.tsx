@@ -30,7 +30,7 @@ export default function Navbar() {
   return (
     <nav className={styles.navbar}>
       <div className={styles.logo}>
-        <Link href="/">ATD Briques Durables</Link>
+        <Link href="/">ATD Briques</Link>
       </div>
       <div className={styles.links}>
         <div className={styles.navLinks}>
