@@ -2,7 +2,9 @@
   "common": {
     "brand": "ATD Briques",
     "cart": "Cart",
-    "language": "Language"
+    "language": "Language",
+    "underConstruction": "Under construction",
+    "underConstructionIcon": "Under construction"
   },
   "navbar": [
     {"name": "Projects","url": "/projects"},
