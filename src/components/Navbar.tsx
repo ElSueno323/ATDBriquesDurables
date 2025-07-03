@@ -5,10 +5,14 @@ import { usePathname } from "next/navigation";
 import styles from "./Navbar.module.css";
 import { useTranslation } from "@/utils/useTranslation";
 import { FiShoppingCart } from "react-icons/fi";
+import { useState, useRef, useEffect } from "react";
+import UnderConstructIcon from "./UnderConstructIcon";
 
 export default function Navbar() {
   const { t, language, setLanguage } = useTranslation();
   const pathname = usePathname();
+  const [showCartInfo, setShowCartInfo] = useState(false);
+  const cartInfoTimeout = useRef<NodeJS.Timeout | null>(null);
 
   const toggleLanguage = () => {
     setLanguage(language === 'fr' ? 'en' : 'fr');
@@ -27,10 +31,24 @@ export default function Navbar() {
     return pathname.startsWith(href);
   };
 
+  const handleCartClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    setShowCartInfo(true);
+    if (cartInfoTimeout.current) clearTimeout(cartInfoTimeout.current);
+    cartInfoTimeout.current = setTimeout(() => setShowCartInfo(false), 2500);
+  };
+
+  useEffect(() => {
+    if (!showCartInfo) return;
+    const handleClickOutside = () => setShowCartInfo(false);
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [showCartInfo]);
+
   return (
     <nav className={styles.navbar}>
       <div className={styles.logo}>
-        <Link href="/">ATD Briques</Link>
+        <Link href="/">{t.common.brand}</Link>
       </div>
       <div className={styles.links}>
         <div className={styles.navLinks}>
@@ -50,9 +68,27 @@ export default function Navbar() {
         >
           {language === 'fr' ? 'EN' : 'FR'}
         </button>
-        <Link href="/cart" className={styles.cart} aria-label="Panier">
-          <FiShoppingCart size={22} color="#222" />
-        </Link>
+        <div style={{ position: 'relative', display: 'inline-block' }}>
+          <Link href="/cart" className={styles.cart} aria-label={t.common.cart} onClick={handleCartClick}>
+            <FiShoppingCart size={22} color="#222" />
+            {showCartInfo && (
+              <span className={styles.cartInfoBubble}>
+                <UnderConstructIcon 
+                  style={{
+                    width: 20, 
+                    height: 20, 
+                    marginRight: 8, 
+                    verticalAlign: 'middle', 
+                    display: 'inline', 
+                    color: 'var(--primary-color)',
+                  }} 
+                  aria-label={t.common.underConstructionIcon}
+                />
+                {t.common.underConstruction}
+              </span>
+            )}
+          </Link>
+        </div>
       </div>
     </nav>
   );

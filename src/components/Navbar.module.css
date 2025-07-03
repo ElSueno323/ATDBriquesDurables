@@ -111,6 +111,26 @@
   color: white;
 }
 
+.cartInfoBubble {
+  position: absolute;
+  top: 38px;
+  right: 0;
+  background: #222;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 16px;
+  font-size: 0.95rem;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  z-index: 10;
+  animation: fadeInCartBubbleDown 0.2s;
+}
+
+@keyframes fadeInCartBubbleDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 @media (max-width: 900px) {
   .links {
     gap: 1rem;
