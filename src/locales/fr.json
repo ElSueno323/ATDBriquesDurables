@@ -1,6 +1,6 @@
 {
   "common": {
-    "brand": "ATD Briques Durables",
+    "brand": "ATD Briques",
     "cart": "Panier",
     "language": "Langue"
   },
@@ -11,7 +11,7 @@
   ],
   "home": {
     "hero": {
-      "title": "ATD Briques Durables",
+      "title": "ATD Briques",
       "description": "Votre partenaire pour des constructions durables.",
       "cta": "VOIR NOS RÉALISATIONS"
     },
@@ -61,7 +61,7 @@
     }
   },
   "contact": {
-    "title": "Contact Us",
+    "title": "ATD Briques",
     "form": {
       "namePlaceholder": "Nom",
       "emailPlaceholder": "Email",
@@ -93,7 +93,7 @@
     "title": "Témoignages Clients",
     "testimonials": [
       {
-        "comment": "Service exceptionnel ! L'équipe d'ATD Briques Durables a rénové notre maison avec un professionnalisme remarquable. Travail soigné et dans les délais.",
+        "comment": "Service exceptionnel ! L'équipe d'ATD Briques a rénové notre maison avec un professionnalisme remarquable. Travail soigné et dans les délais.",
         "clientName": "Marie Dubois"
       },
       {
@@ -108,7 +108,7 @@
   },
   "about": {
     "title": "Construisons<br />Quelque chose<br />Ensemble",
-    "description": "ATD Briques Durables transforme vos projets de construction en réalité. Avec plus de 15 ans d'expérience, nous sommes votre partenaire de confiance pour tous vos besoins en construction durable.",
+    "description": "ATD Briques transforme vos projets de construction en réalité. Avec plus de 15 ans d'expérience, nous sommes votre partenaire de confiance pour tous vos besoins en construction durable.",
     "ctaButton": "NOUS CONTACTER",
     "faq": [
       {
