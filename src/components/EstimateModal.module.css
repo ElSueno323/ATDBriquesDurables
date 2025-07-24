@@ -34,14 +34,14 @@
   transition: color 0.2s;
 }
 .closeBtn:hover {
-  color: var(--theme-red, #ba1e05);
+  color: var(--theme-primary-light, var(--theme-primary));
 }
 
 .modal h2 {
   margin-bottom: 1.5rem;
   text-align: center;
   font-size: 1.4rem;
-  color: var(--theme-red, #ba1e05);
+  color: var(--theme-primary, var(--theme-primary));
 }
 
 .form {
@@ -65,11 +65,11 @@
   resize: none;
 }
 .form input:focus, .form textarea:focus {
-  border-color: var(--theme-red, #ba1e05);
+  border-color: var(--theme-primary-light, var(--theme-primary));
   outline: none;
 }
 .submitBtn {
-  background: var(--theme-red, #ba1e05);
+  background: var(--theme-primary-light);
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -81,10 +81,10 @@
   transition: background 0.2s;
 }
 .submitBtn:hover {
-  background: #a52a2a;
+  background: var(--theme-primary);
 }
 .error {
-  color: var(--theme-red, #ba1e05);
+  color: var(--theme-primary, #ba1e05);
   font-size: 0.95rem;
   margin-left: 0.5rem;
 }

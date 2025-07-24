@@ -43,11 +43,11 @@
 }
 
 .navLink:hover {
-  color: var(--theme-red);
+  color: var(--theme-primary);
 }
 
 .navLink.active {
-  color: var(--theme-red);
+  color: var(--theme-primary);
 }
 
 .navLink.active::after {
@@ -57,7 +57,7 @@
   left: 0;
   right: 0;
   height: 3px;
-  background-color: var(--theme-red);
+  background-color: var(--theme-primary);
   border-radius: 2px;
   animation: slideIn 0.3s ease-out;
 }
@@ -79,7 +79,7 @@
 }
 
 .langButton:hover {
-  color: var(--theme-red);
+  color: var(--theme-primary);
 }
 
 .cart {
@@ -92,22 +92,22 @@
 }
 
 .cart:hover svg {
-  color: var(--theme-red) !important;
+  color: var(--theme-primary) !important;
 }
 
 .langButton {
   padding: 0.5rem 1rem;
-  border: 2px solid var(--theme-red);
+  border: 2px solid var(--theme-primary);
   border-radius: 4px;
   background-color: transparent;
-  color: var(--theme-red);
+  color: var(--theme-primary);
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .langButton:hover {
-  background-color: var(--theme-red);
+  background-color: var(--theme-primary);
   color: white;
 }
 

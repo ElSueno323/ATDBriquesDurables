@@ -1,5 +1,5 @@
 .contactSection {
-  background-color: var(--theme-red);
+  background-color: var(--theme-primary);
   padding: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -7,7 +7,7 @@
 }
 
 .leftSection {
-  background-color: var(--theme-red);
+  background-color: var(--theme-primary);
   padding: 60px;
   color: white;
   display: flex;
@@ -88,7 +88,7 @@
 
 .sendButton:hover {
   background-color: white;
-  color: var(--theme-red);
+  color: var(--theme-primary);
 }
 
 .socialSection {
@@ -109,7 +109,7 @@
 }
 
 .socialLink:hover {
-  color: var(--theme-red);
+  color: var(--theme-primary);
 }
 
 .infoSection {
@@ -132,7 +132,7 @@
 }
 
 .infoItem:hover {
-  color: var(--theme-red);
+  color: var(--theme-primary);
 }
 
 .infoIcon {
