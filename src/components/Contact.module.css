@@ -1,5 +1,5 @@
 .contactSection {
-  background-color: var(--theme-red);
+  background-color: var(--theme-primary);
   padding: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -7,7 +7,7 @@
 }
 
 .leftSection {
-  background-color: var(--theme-red);
+  background-color: var(--theme-primary);
   padding: 60px;
   color: white;
   display: flex;
@@ -88,7 +88,7 @@
 
 .sendButton:hover {
   background-color: white;
-  color: var(--theme-red);
+  color: var(--theme-primary);
 }
 
 .socialSection {
@@ -109,7 +109,7 @@
 }
 
 .socialLink:hover {
-  color: var(--theme-red);
+  color: var(--theme-primary);
 }
 
 .infoSection {
@@ -128,20 +128,25 @@
   color: #333;
   text-decoration: none;
   font-size: 1rem;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .infoItem:hover {
-  color: var(--theme-red);
+  color: var(--theme-primary);
+  transform: scale(1.05);
 }
 
 .infoIcon {
   font-size: 1.2rem;
-  color: #666;
 }
 
-.infoText {
-  color: #333;
+.infoIcon:hover {
+  font-size: 1.2rem;
+  color: var(--theme-primary);
+}
+
+.infoText:hover {
+  color: var(--theme-primary);
 }
 
 @media (max-width: 768px) {

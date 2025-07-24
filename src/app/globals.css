@@ -1,7 +1,8 @@
 :root {
-  --primary-color: #ba1e05;
-  --theme-red: #ba1e05;
-  --theme-red-off: rgba(165, 42, 42, 0.589);
+  --primary-color: #a34e09;
+  --theme-primary: #8d4307;
+  --theme-primary-off: #b0612080;
+  --theme-primary-light: #a34e09;
   --theme-beige: #fff7ed;
 
   --text-color: #333333;
