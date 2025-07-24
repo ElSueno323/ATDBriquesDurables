@@ -102,13 +102,13 @@ export default function Contact() {
           </button>
           
           {submitStatus === 'success' && (
-            <div style={{ color: 'green', marginTop: '10px', fontWeight: 'bold' }}>
+            <div style={{ color: 'white', marginTop: '10px', fontWeight: 'bold' }}>
               Message envoyé avec succès !
             </div>
           )}
           
           {submitStatus === 'error' && (
-            <div style={{ color: 'red', marginTop: '10px', fontWeight: 'bold' }}>
+            <div style={{ color: 'black', marginTop: '10px', fontWeight: 'bold' }}>
               {errorMessage}
             </div>
           )}

@@ -7,6 +7,7 @@ import { useTranslation } from "@/utils/useTranslation";
 import { FiShoppingCart } from "react-icons/fi";
 import { useState, useRef, useEffect } from "react";
 import UnderConstructIcon from "./UnderConstructIcon";
+import Image from "next/image";
 
 export default function Navbar() {
   const { t, language, setLanguage } = useTranslation();
@@ -48,7 +49,9 @@ export default function Navbar() {
   return (
     <nav className={styles.navbar}>
       <div className={styles.logo}>
-        <Link href="/">{t.common.brand}</Link>
+        <Link href="/">
+          <Image src="/logo.png" alt={t.common.brand} width={100} height={100} />
+        </Link>
       </div>
       <div className={styles.links}>
         <div className={styles.navLinks}>
